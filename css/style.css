@@ -1,0 +1,82 @@
+.header {font-family: "futura-pt", Arial, Helvetica, sans-serif; font-weight: 700; font-size: 1.0em; margin: 0; padding: 0; text-transform: uppercase; letter-spacing: 0.1em;}
+p {font-family: "futura-pt", Arial, Helvetica, sans-serif; font-weight: 400; font-size: 1.0em; margin: 0; padding: 0; text-transform: uppercase; letter-spacing: 0.1em;}
+
+.large-5 {font-size: 5.0em;}
+.large-4 {font-size: 4.0em;}
+.large-3 {font-size: 3.0em;}
+.large-25 {font-size: 2.5em;}
+.large-2 {font-size: 1.5em;}
+.large-15 {font-size: 1.3em;}
+
+@media screen and (min-width: 0px) {
+.large-5 {font-size: 5.0em;}
+.large-4 {font-size: 4.0em;}
+.large-3 {font-size: 3.0em;}
+.large-25 {font-size: 2.5em;}
+.large-2 {font-size: 2.0em;}
+.large-15 {font-size: 1.5em;}
+}
+
+
+.white {color: #fff;}
+.black {color: #000;}
+
+
+.padding-top {padding-top: 2em;}
+.padding-top-double {padding-top: 2em;}
+.padding-top-triple {padding-top: 1em;}
+.padding-bottom {padding-bottom: 1em;}
+
+
+a:link, a:visited, a:active {color: #fff; text-decoration: none;}
+a:hover {color: #fff; text-decoration: underline;}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.container {
+    background-image: url("img/hd-sunset-river-HD-1200x1920.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 0px solid #fff;
+
+}
+
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    height: 1200px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+
+}
+
+.content img {
+    max-width: 100%;
+
+}
+
+my-email::after {
+content: attr(data-domain);
+}
+
+my-email::before {
+content: attr(data-user) "\0040";
+}
